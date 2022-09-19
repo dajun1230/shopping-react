@@ -22,5 +22,8 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "alias": {
+    "@src": "./src"
+  }
 }
