@@ -1,11 +1,12 @@
 import ReactDOM from 'react-dom/client';
+import { RouterProvider } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/es/locale/zh_CN';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
 import Store from '@src/store';
-import App from './App';
+import router from '@src/routes';
 import 'antd/dist/antd.less';
 import './index.less';
 
@@ -17,7 +18,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <Provider store={Store}>
     <ConfigProvider locale={zhCN}>
-      <App />
+      <RouterProvider router={router} />
     </ConfigProvider>
   </Provider>
 );
