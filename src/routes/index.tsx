@@ -17,9 +17,9 @@ const router = createBrowserRouter([
         children: [
           {
             path: 'list',
-            element: <UserList />
-          }
-        ]
+            element: <UserList />,
+          },
+        ],
       },
       {
         path: 'file',
@@ -27,16 +27,16 @@ const router = createBrowserRouter([
         children: [
           {
             path: 'list',
-            element: <FileList />
+            element: <FileList />,
           },
           {
             path: 'upload',
-            element: <FileUpload />
-          }
-        ]
-      }
-    ]
-  }
-])
+            element: <FileUpload />,
+          },
+        ],
+      },
+    ],
+  },
+]);
 
 export default router;

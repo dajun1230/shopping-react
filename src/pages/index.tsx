@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './layout/header';
 import Menus from './layout/menus';
 import Content from './layout/content';
-import "./index.less";
+import './index.less';
 
 const RootPage: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const RootPage: React.FC = () => {
         <Content />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default RootPage;
