@@ -1,0 +1,41 @@
+.pro {
+  height: 100%;
+  overflow: hidden;
+
+  &-header {
+    height: 56px;
+    background: #1890ff;
+    border-bottom: 1px solid #eee;
+  }
+
+  &-content {
+    height: calc(100% - 56px);
+    display: flex;
+
+    &-menu {
+      width: 256px;
+
+      .ant-menu {
+        height: 100%;
+      }
+    }
+
+    &-main {
+      flex: 1;
+      padding: 20px;
+      background-color: #d8d8d8;
+      overflow: hidden;
+      
+      .main {
+        height: 100%;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+        overflow: auto;
+        &-bread {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

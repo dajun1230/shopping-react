@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Header: React.FC = () => {
+function Header(): JSX.Element {
   return (
-    <div>header</div>
+    <div className='pro-header'>Header</div>
   )
 }
 
