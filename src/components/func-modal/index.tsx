@@ -3,10 +3,10 @@
  * 优势：对于调用方，集成后的 funcModal 它不是一个组件，不需要写在 render 里；不需要控制 visible，获取值也不需要通过 onCancel 等回调；而是通过函数式呼起弹层，await 的形式获取值。
  */
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const FuncModel = <Result = any, Props = any>({
+const FuncModel = <Result, Props = any>({
   Component,
   props,
 }: {
@@ -16,7 +16,7 @@ const FuncModel = <Result = any, Props = any>({
     | ((p: Props) => JSX.Element);
   props?: object;
 }) => {
-  const cacheContainer = document.createElement('div');
+  const cacheContainer = document.createElement("div");
   let element = ReactDOM.createRoot(cacheContainer);
 
   return new Promise<Result>((resolve) => {

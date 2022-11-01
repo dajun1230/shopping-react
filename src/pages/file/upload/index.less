@@ -7,7 +7,43 @@
     line-height: 100px;
     input {
       width: 100%;
+      height: 100%;
       // opacity: 0;
+    }
+  }
+
+  .cube-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .cube {
+      width: 40px;
+      height: 40px;
+      margin-right: 4px;
+      margin-bottom: 4px;
+      border: 1px black solid;
+      background-color: #eee;
+      &-li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .ant-spin {
+          height: 20px;
+        }
+      }
+      
+      .success {
+        background-color: green;
+      }
+      .uploading {
+        background-color: blue;
+      }
+      .error {
+        background-color: red;
+      }
     }
   }
 }
